@@ -33,14 +33,14 @@
                                     </Path.RenderTransform>
                                 </Path>
                             </Border>
-                            <Border Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <Border Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <Path  x:Name="Indeterminate" Stroke="Red" StrokeThickness="7" Opacity="0">
                                     <Path.Data>
-                                        <EllipseGeometry Center="8,10" RadiusX="6" RadiusY="6"/>
+                                        <EllipseGeometry Center="8,-20" RadiusX="6" RadiusY="6"/>
                                     </Path.Data>
                                 </Path>
                             </Border>
-                            <ContentPresenter Grid.Row="1" x:Name="Conditions" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <ContentPresenter Grid.Row="2" x:Name="Conditions" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         </Grid>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsChecked" Value="True">
